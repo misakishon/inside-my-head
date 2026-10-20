@@ -1,6 +1,6 @@
-# 🧠 MISAKI® Editorial Portfolio & Interactive Avatar
+# 🧠 MISAKI® Multiverse Terminal & Interactive Avatar
 
-A responsive, high-craft **Awwwards-style Swiss Brutalist / Editorial About Page** featuring an interactive **"Mind-Blown" animated character centerpiece** with touchable floating components.
+A responsive, high-craft **Swiss Brutalist / Speculative Creative Terminal** featuring an interactive **"Mind-Blown" animated character centerpiece** with touchable floating components and 100% original fictional universe lore.
 
 Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompanied by custom Python image processing tools for transparent animated GIF generation.
 
@@ -11,11 +11,11 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompa
 ### 1. 📐 Swiss Brutalist Editorial Grid (`100vh`)
 - **Full Viewport Fit**: Designed to fit completely within a single desktop screen (`height: 100vh; overflow: hidden;`) without vertical scrollbars or cut-offs.
 - **Strict 12-Column CSS Grid**: Consistent alignment across Header, Hero Centerpiece, and Footer:
-  - **Cols 1–2**: Rotated vertical logo (`MISAKI®`) with metadata (`+84 hcmc, vn` & `copyright 2026`) | Giant `19` | Awards & Recognitions.
-  - **Cols 3–4**: Navigation menu (`WORK`, `→ ABOUT`, `PLAYGROUND`, `CONTACT`) | Talks & Publications.
-  - **Cols 5–7**: Audio synthesizer toggle (`Audio Off —`) & Dynamic HCMC Clock (`HCMC, 11:08`) | Capabilities list.
-  - **Cols 8–11**: Personal traits block (`PLANT DADDY...`) | Giant `96` with overlaid red `AND` | Manifesto statement.
-  - **Col 12**: Inquiries link (`hello@misaki.dev`) | Trusted client list.
+  - **Cols 1–2**: Rotated vertical logo (`MISAKI®`) with metadata (`grid 07 neo-tokyo` & `system est. 2026`) | Giant `19` | Awards & Recognitions.
+  - **Cols 3–4**: Navigation menu (`WORK`, `→ ABOUT`, `PLAYGROUND`, `CONTACT`) | Transmissions & Publications.
+  - **Cols 5–7**: Audio synthesizer toggle (`Audio Off —`) & Dynamic Neo-Tokyo Clock (`Neo-Tokyo, 11:08`) | Capabilities list.
+  - **Cols 8–11**: Fictional traits block (`SYNTHESIZER OF VIRTUAL REALMS...`) | Giant `96` with overlaid red `AND` | Multiverse Manifesto.
+  - **Col 12**: Sub-Space Signal link (`hello@misaki.dev`) | Allied Guilds list.
 - **Pure Flat Aesthetics**: Zero drop shadows, zero border dividers, completely flat brutalist look.
 
 ### 2. 🧢 Interactive Avatar Centerpiece
@@ -33,16 +33,16 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompa
 
 ### 3. 💻 Touchable & Interactive Components
 When the avatar is open, each floating idea becomes an interactive touch target:
-- **Hover Micro-Interactions**: Hovering over any floating item shows an indicator ring and tooltip tag (e.g. `MY LAPTOP ↗`, `LIGHTBULB ↗`).
+- **Hover Micro-Interactions**: Hovering over any floating item shows an indicator ring and tooltip tag (e.g. `CYBER RIG ↗`, `SYNAPSE SPARK ↗`).
 - **Showcase Modal**: Clicking any floating component opens a Swiss brutalist modal with detailed specifications and high-resolution artwork.
-- **Custom Laptop Showcase**:
-  - Click **`📁 Choose Photo`** inside the modal to upload your real laptop photo right from your disk (instantly stored in `localStorage`).
+- **Custom Cyber Rig Showcase**:
+  - Click **`📁 Load Schematics`** inside the modal to upload your custom workstation photo or schematics right from your disk (instantly stored in `localStorage`).
   - Alternatively, place an image at `public/assets/my_laptop.png`.
-  - Includes a quick **`↺ Reset`** button to return to the default illustration.
+  - Includes a quick **`↺ Default`** button to return to the default illustration.
 
 ### 4. 🔊 Tactile Audio & Real-Time Clock
 - **Web Audio API**: Built-in sound synthesizer generating subtle sine-wave click frequencies (520Hz / 320Hz) when toggling states or audio.
-- **Real-Time HCMC Clock**: Live dynamic time formatted for Ho Chi Minh City timezone (`UTC+7`).
+- **Real-Time Clock**: Live dynamic time formatted for Neo-Tokyo (`UTC+9`).
 
 ---
 

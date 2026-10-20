@@ -14,9 +14,9 @@ interface InteractiveItem {
 const INTERACTIVE_ITEMS: InteractiveItem[] = [
   {
     id: 'laptop',
-    name: 'My Laptop',
-    title: 'WORKSTATION // CODE RIG',
-    subtitle: 'MacBook Pro / Development Setup',
+    name: 'Cyber Rig',
+    title: 'WORKSTATION // CYBER RIG',
+    subtitle: 'MacBook Pro / Quantum Neural Rig',
     desc: 'The primary powerhouse for engineering web applications, graphics engines, and responsive design systems. Click below to personalize with your own laptop photo.',
     image: '/assets/my_laptop.png',
     bounds: { left: 21.0, top: 22.6, width: 33.0, height: 18.7 },
@@ -24,90 +24,90 @@ const INTERACTIVE_ITEMS: InteractiveItem[] = [
   },
   {
     id: 'lightbulb',
-    name: 'Lightbulb',
-    title: 'SPARK // IDEATION',
-    subtitle: 'Breakthrough Concepts & Strategy',
+    name: 'Synapse Spark',
+    title: 'SYNAPSE // SPARK',
+    subtitle: 'Bioluminescent Ideation',
     desc: 'Unlocking breakthrough concepts, creative directions, and translating abstract vision into concrete digital products.',
     image: '/components/04_lightbulb.png',
     bounds: { left: 47.6, top: 21.5, width: 12.2, height: 10.5 }
   },
   {
     id: 'controller',
-    name: 'Game Controller',
-    title: 'PLAY // TACTILE UX',
-    subtitle: 'Micro-Interactions & Fun',
+    name: 'Arcade Pad',
+    title: 'TACTILE // ARCADE PAD',
+    subtitle: 'Zero-G Haptic Controller',
     desc: 'Physics-based micro-interactions, responsive tactile feedback, and delightful gamified storytelling.',
     image: '/components/05_game_controller.png',
     bounds: { left: 59.2, top: 23.4, width: 20.7, height: 11.8 }
   },
   {
     id: 'headphones',
-    name: 'Headphones',
-    title: 'FLOW // SOUNDSCAPES',
-    subtitle: 'Sensory Audio & Immersion',
+    name: 'Sonic Rig',
+    title: 'FREQUENCY // SONIC RIG',
+    subtitle: 'Cyber-Acoustic Immersion',
     desc: 'Deep cognitive flow states, ambient focus soundscapes, and rhythmic animation pacing.',
     image: '/components/06_headphones.png',
     bounds: { left: 62.4, top: 32.3, width: 22.5, height: 15.2 }
   },
   {
     id: 'smartphone',
-    name: 'Smartphone',
-    title: 'RESPONSIVE // MOBILE FIRST',
-    subtitle: 'Touch Optimization',
+    name: 'Commlink',
+    title: 'POCKET // COMMLINK',
+    subtitle: 'Sub-Space Transceiver',
     desc: 'Dynamic touch gestures, fluid viewport budgets, and frictionless handheld ergonomics.',
     image: '/components/07_smartphone.png',
     bounds: { left: 48.5, top: 34.8, width: 15.1, height: 12.0 }
   },
   {
     id: 'notebook',
-    name: 'Notebook',
-    title: 'SPECS // ARCHITECTURE',
-    subtitle: 'Sketches & Traceable Logic',
+    name: 'Blueprints',
+    title: 'CODEX // BLUEPRINTS',
+    subtitle: 'Holographic Schematics',
     desc: 'Traceable planning, architectural diagrams, and structured specifications before shipping code.',
     image: '/components/08_spiral_notebook.png',
     bounds: { left: 24.9, top: 40.5, width: 21.1, height: 15.0 }
   },
   {
     id: 'gear',
-    name: 'Gear',
-    title: 'SYSTEM // RELIABILITY',
-    subtitle: 'Infrastructure & Mechanics',
+    name: 'Chrono-Gear',
+    title: 'CORE // CHRONO-GEAR',
+    subtitle: 'Perpetual Motion Engine',
     desc: 'Zero-latency state synchronization, robust component pipelines, and bulletproof runtime stability.',
     image: '/components/09_gear.png',
     bounds: { left: 45.9, top: 46.1, width: 12.1, height: 8.2 }
   },
   {
     id: 'coffee_mug',
-    name: 'Coffee Mug',
-    title: 'CRAFT // DAILY FUEL',
-    subtitle: 'Relentless Polish',
+    name: 'Fuel Cell',
+    title: 'ELIXIR // DARK MATTER',
+    subtitle: 'High-Octane Fuel Cell',
     desc: 'Espresso-driven sprints, relentless attention to detail, and obsession with pixel precision.',
     image: '/components/10_coffee_mug.png',
     bounds: { left: 64.2, top: 46.4, width: 15.9, height: 10.2 }
   },
   {
     id: 'binder',
-    name: 'Document Binder',
-    title: 'DOCS // DESIGN SYSTEM',
-    subtitle: 'Guidelines & Tokens',
+    name: 'Token Vault',
+    title: 'ARCHIVE // PROTOCOLS',
+    subtitle: 'Design Token Vault',
     desc: 'Comprehensive design tokens, typography rules, and modular component documentation.',
     image: '/components/11_document_binder.png',
     bounds: { left: 53.9, top: 49.4, width: 11.5, height: 7.7 }
   },
   {
     id: 'paper',
-    name: 'Floating Paper',
-    title: 'FLOW // CREATIVE NOTES',
-    subtitle: 'Ideas in Motion',
+    name: 'Memory Scrap',
+    title: 'GLITCH // MEMORY SCRAP',
+    subtitle: 'Drifting Thought Fragments',
     desc: 'Spontaneous brainstorms and creative thoughts floating freely out of the mind.',
     image: '/components/12_floating_paper.png',
     bounds: { left: 36.3, top: 52.3, width: 12.3, height: 6.0 }
   },
   {
     id: 'cap',
-    name: 'Snapback Cap',
-    title: 'SNAPBACK // CROWN',
-    subtitle: 'Unleashed Mind-Blown State',
+    name: 'Psi-Helmet',
+    title: 'SNAPBACK // PSI-HELMET',
+    subtitle: 'Neural Containment Unit',
     desc: 'The signature cap popped off to release creative ideas and superpowers into the world.',
     image: '/components/02_floating_cap.png',
     bounds: { left: 20.4, top: 2.2, width: 53.7, height: 20.9 }
@@ -164,12 +164,12 @@ export default function App() {
     }
   }
 
-  // Real-time dynamic clock for HCMC (UTC+7)
+  // Real-time dynamic clock for Neo-Tokyo (UTC+9)
   useEffect(() => {
     const updateTime = () => {
       const now = new Date()
       const options: Intl.DateTimeFormatOptions = {
-        timeZone: 'Asia/Ho_Chi_Minh',
+        timeZone: 'Asia/Tokyo',
         hour: '2-digit',
         minute: '2-digit',
         hour12: false
@@ -262,8 +262,8 @@ export default function App() {
             </div>
             {/* Right vertical column: Tiny metadata with clean separation */}
             <div className="vertical-lr-reverse flex justify-between h-full text-[0.65rem] text-[#555555] font-mono leading-none tracking-normal whitespace-nowrap py-0.5">
-              <span>+84 &nbsp; hcmc, vn</span>
-              <span>copyright 2026</span>
+              <span>grid 07 &nbsp; neo-tokyo</span>
+              <span>system est. 2026</span>
             </div>
           </div>
         </div>
@@ -297,25 +297,25 @@ export default function App() {
             </button>
           </div>
           <div className="col-span-2 flex flex-col">
-            <span className="font-bold text-[#111111]">Working globally</span>
-            <span className="text-[#888888] font-mono">HCMC, {timeStr}</span>
+            <span className="font-bold text-[#111111]">Multiverse Terminal</span>
+            <span className="text-[#888888] font-mono">Neo-Tokyo, {timeStr}</span>
           </div>
         </div>
 
         {/* Cols 8–11: Personal Traits Statement Block */}
         <div className="col-span-4 flex flex-col font-condensed font-medium text-[clamp(1.2rem,1.55vw,1.65rem)] leading-[1.08] tracking-[-0.01em] text-[#EE4338] uppercase select-none">
-          <div>PLANT DADDY</div>
-          <div>GOONER SINCE THE INVINCIBLES</div>
-          <div>MARRIED TO A BEAUTIFUL KNITTER</div>
-          <div>3 CATS CALL HIM DAD</div>
-          <div>BLACKBERRY COLLECTOR</div>
-          <div>POOL PLAYER BUT CHICKEN LEVEL</div>
-          <div>INTO WATCHES NOW...</div>
+          <div>SYNTHESIZER OF VIRTUAL REALMS</div>
+          <div>CHIEF DREAM ARCHITECT AT NIGHT</div>
+          <div>POWERED BY 90S ANIME & RAMEN</div>
+          <div>CONVERSES IN JAVASCRIPT & GLSL</div>
+          <div>RETRO MECHA ARTIFACT COLLECTOR</div>
+          <div>NEO-TOKYO DRIFT NOVICE</div>
+          <div>SEARCHING FOR THE MATRIX...</div>
         </div>
 
         {/* Col 12: Inquiries Link (Single Horizontal Line, Right-Aligned) */}
         <div className="col-span-1 flex items-start justify-end text-[0.72rem] whitespace-nowrap">
-          <span className="text-[#888888]">For Inquiries &nbsp;</span>
+          <span className="text-[#888888]">Sub-Space Signal &nbsp;</span>
           <a
             href="mailto:hello@misaki.dev"
             className="font-bold text-[#111111] underline underline-offset-2 hover:text-[#EE4338] transition-colors"
@@ -440,18 +440,18 @@ export default function App() {
             Awards & Recognitions
           </h3>
           <ul className="space-y-[1px] text-[#111111] font-medium">
-            <li>Awwwards Independent of the Year Nominee (4)</li>
-            <li>CSSDA Designer of the Year Nominee (3)</li>
-            <li>Webby Nominee (2)</li>
-            <li>Webby Honoree (2)</li>
-            <li>Awwwards Site of the Month Nominees (4)</li>
-            <li>Awwwards Site of the Day (13)</li>
-            <li>CSSDA Website of the Month (2)</li>
-            <li>CSSDA Website of the Day (14)</li>
-            <li>FWA of the Day (12)</li>
-            <li>Behance Feature (17)</li>
-            <li>Good Design Awards</li>
-            <li>Best Awards</li>
+            <li>Sector 7 Digital Grand Prix (x4)</li>
+            <li>Cyberverse Best in Show — Gold (x3)</li>
+            <li>Quantum Webby Nominee (x2)</li>
+            <li>Interdimensional Design Trophy (x2)</li>
+            <li>Neo-Interface of the Orbit (x4)</li>
+            <li>Holo-Grid Site of the Solar Cycle (x13)</li>
+            <li>Subpixel Architecture Laureate (x2)</li>
+            <li>Cyborg UI Guild Honor (x14)</li>
+            <li>Future Web Archive Prime (x12)</li>
+            <li>Multiverse Craft Feature (x17)</li>
+            <li>Neo-Tokyo Kinetic Design Medal</li>
+            <li>Universal Speculative Arts Award</li>
           </ul>
         </div>
 
@@ -462,49 +462,49 @@ export default function App() {
           </h3>
           <ul className="space-y-[1px] text-[#111111] font-medium">
             <li>
-              <a href="#codrops" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Codrops - Designer Spotlight
+              <a href="#dispatch" className="underline underline-offset-2 hover:text-[#EE4338]">
+                The Neuromancer Dispatch: Spotlight
               </a>
             </li>
             <li className="text-[#111111]">
-              Sandu Publishing: Interactive Design for Screen
+              Neo-Press Tokyo: Holographic Screen Systems
             </li>
             <li className="text-[#111111]">
-              Pint of Design | December 2024
+              Signals from Dimension Zero | Cycle 2026
             </li>
             <li>
-              <a href="#commarts-voyce" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Commarts: Mat Voyce
+              <a href="#mecha-type" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Cyber-Chronicles: Mecha Typography
               </a>
             </li>
             <li>
-              <a href="#commarts-iventions" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Commarts: Iventions
+              <a href="#frequency" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Orbital Frequency 108.4: Soundscapes
               </a>
             </li>
             <li>
-              <a href="#commarts-wonj" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Commarts: Won J. You Studios
+              <a href="#neural-ui" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Ghost in the Machine: Neural UI Case Study
               </a>
             </li>
             <li>
-              <a href="#awwwards-sb" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Awwwards Case Study | Serious Business
+              <a href="#shaders" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Procedural Dreams & GLSL Shaders Vol. 4
               </a>
             </li>
             <li>
-              <a href="#awwwards-mv" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Awwwards Case Study | Mat Voyce
+              <a href="#multitimeline" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Silicon & Stardust: Multi-Timeline Web
               </a>
             </li>
             <li>
-              <a href="#awwwards-fa" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Awwwards Case Study | Fromanother
+              <a href="#anthropology" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Cyber-Anthropology Journal: Issue #42
               </a>
             </li>
             <li>
-              <a href="#abduzeedo" className="underline underline-offset-2 hover:text-[#EE4338]">
-                Abduzeedo | RLY Network
+              <a href="#infinite-canvas" className="underline underline-offset-2 hover:text-[#EE4338]">
+                Sub-Space Radio | Infinite Canvas Protocol
               </a>
             </li>
           </ul>
@@ -516,20 +516,20 @@ export default function App() {
             Capabilities
           </h3>
           <ul className="space-y-[1px] text-[#111111] font-medium">
-            <li>Digital Art Direction</li>
-            <li>Website Design</li>
-            <li>Application Design</li>
-            <li>Interactive Storytelling</li>
-            <li>Website Motion & Animation</li>
-            <li>Design System</li>
-            <li>User Experience</li>
+            <li>Quantum Interface Architecture</li>
+            <li>Procedural 3D Worldbuilding</li>
+            <li>Neural Motion Graphics</li>
+            <li>Holographic Storytelling</li>
+            <li>Subpixel Kinetic Typography</li>
+            <li>Zero-G Micro-Interactions</li>
+            <li>Speculative Web Experiences</li>
           </ul>
           <div className="mt-3">
             <a
-              href="#process"
+              href="#protocol"
               className="underline underline-offset-2 font-medium text-[#111111] hover:text-[#EE4338] transition-colors"
             >
-              Process & Approach
+              Exploration Protocol & Lore →
             </a>
           </div>
         </div>
@@ -537,28 +537,28 @@ export default function App() {
         {/* Cols 8–11: Manifesto Statement (Constrained to max-width: 430px) */}
         <div className="col-span-4 flex flex-col">
           <p className="font-condensed font-medium text-[clamp(1.2rem,1.55vw,1.65rem)] leading-[1.08] tracking-[-0.01em] text-[#EE4338] uppercase select-none max-w-[430px]">
-            SHAPING DIGITAL EXPERIENCES WITH CLARITY, INTENTION, CHARACTER AND BEING A GOOD FRIEND WITH DIGITAL AGENCIES, DESIGN STUDIOS, STARTUPS AND BUSINESSES AROUND THE WORLD SINCE 2018.
+            CRAFTING UNREAL DIGITAL REALMS WITH RELENTLESS IMAGINATION, CODE POETRY, AND BOLD EXPERIMENTS FOR EXPLORERS, TIME TRAVELERS, AND DIGITAL DREAMERS ACROSS THE MULTIVERSE SINCE 2018.
           </p>
         </div>
 
         {/* Col 12: Trusted by (Right edge) */}
         <div className="col-span-1 flex flex-col">
           <h3 className="text-[0.72rem] text-[#888888] mb-[14px] font-mono font-normal">
-            Trusted by
+            Allied Guilds
           </h3>
           <ul className="space-y-[1px] text-[#111111] font-medium leading-[1.32]">
-            <li>Unilever</li>
-            <li>VinPearl</li>
-            <li>Autonomous</li>
-            <li>Soravia</li>
-            <li>NanoTemper</li>
-            <li>Arvid Nordquist</li>
-            <li>Soluis Group</li>
-            <li>Klingit</li>
-            <li>ToyFight</li>
-            <li>Stockfiller</li>
-            <li>Serious Business</li>
-            <li className="text-[#888888]">and many more</li>
+            <li>Cyberdyne Syndicate</li>
+            <li>NerveGear Labs</li>
+            <li>Acro-Digital Corp</li>
+            <li>Orbital Dynamics</li>
+            <li>Capsule Systems</li>
+            <li>MishMash Studios</li>
+            <li>Voxel Collective</li>
+            <li>Neo-Arcadia</li>
+            <li>Ghost Shell Co</li>
+            <li>Starbound Media</li>
+            <li>Dreamweaver AI</li>
+            <li className="text-[#888888]">and parallel worlds</li>
           </ul>
         </div>
 
@@ -618,12 +618,12 @@ export default function App() {
             {selectedItem.id === 'laptop' && (
               <div className="bg-white/70 border border-[#111111]/30 p-3 rounded-sm mb-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
                 <div className="flex flex-col text-left">
-                  <span className="font-bold text-[#111111]">Customize Laptop Photo:</span>
-                  <span className="text-[#666666] text-[0.72rem]">Upload your real laptop image to showcase it here</span>
+                  <span className="font-bold text-[#111111]">Customize Cyber Rig:</span>
+                  <span className="text-[#666666] text-[0.72rem]">Mount custom workstation photo or schematic into terminal</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <label className="cursor-pointer bg-[#111111] text-white hover:bg-[#EE4338] transition-colors font-mono text-[0.7rem] uppercase font-bold px-3 py-1.5 rounded-sm whitespace-nowrap">
-                    📁 Choose Photo
+                    📁 Load Schematics
                     <input
                       type="file"
                       accept="image/*"
@@ -637,7 +637,7 @@ export default function App() {
                       onClick={handleResetLaptopImage}
                       className="border border-[#111111] hover:bg-[#EE4338] hover:text-white hover:border-[#EE4338] transition-colors font-mono text-[0.7rem] uppercase px-2.5 py-1.5 rounded-sm whitespace-nowrap"
                     >
-                      ↺ Reset
+                      ↺ Default
                     </button>
                   )}
                 </div>
