@@ -1,0 +1,322 @@
+{
+  "canvas_size": {
+    "width": 1024,
+    "height": 1536
+  },
+  "components": [
+    {
+      "file": "01_character.png",
+      "x": 218,
+      "y": 864,
+      "width": 583,
+      "height": 663,
+      "original_bounds": {
+        "min_x": 230,
+        "min_y": 876,
+        "max_x": 788,
+        "max_y": 1514
+      }
+    },
+    {
+      "file": "02_floating_cap.png",
+      "x": 209,
+      "y": 34,
+      "width": 550,
+      "height": 321,
+      "original_bounds": {
+        "min_x": 221,
+        "min_y": 46,
+        "max_x": 746,
+        "max_y": 342
+      }
+    },
+    {
+      "file": "03_laptop.png",
+      "x": 215,
+      "y": 348,
+      "width": 338,
+      "height": 287,
+      "original_bounds": {
+        "min_x": 227,
+        "min_y": 360,
+        "max_x": 540,
+        "max_y": 622
+      }
+    },
+    {
+      "file": "04_lightbulb.png",
+      "x": 488,
+      "y": 331,
+      "width": 125,
+      "height": 162,
+      "original_bounds": {
+        "min_x": 500,
+        "min_y": 343,
+        "max_x": 600,
+        "max_y": 480
+      }
+    },
+    {
+      "file": "05_game_controller.png",
+      "x": 606,
+      "y": 360,
+      "width": 212,
+      "height": 182,
+      "original_bounds": {
+        "min_x": 618,
+        "min_y": 372,
+        "max_x": 805,
+        "max_y": 529
+      }
+    },
+    {
+      "file": "06_headphones.png",
+      "x": 639,
+      "y": 496,
+      "width": 230,
+      "height": 233,
+      "original_bounds": {
+        "min_x": 651,
+        "min_y": 508,
+        "max_x": 856,
+        "max_y": 716
+      }
+    },
+    {
+      "file": "07_smartphone.png",
+      "x": 497,
+      "y": 534,
+      "width": 155,
+      "height": 184,
+      "original_bounds": {
+        "min_x": 509,
+        "min_y": 546,
+        "max_x": 639,
+        "max_y": 705
+      }
+    },
+    {
+      "file": "08_spiral_notebook.png",
+      "x": 255,
+      "y": 623,
+      "width": 216,
+      "height": 230,
+      "original_bounds": {
+        "min_x": 267,
+        "min_y": 635,
+        "max_x": 458,
+        "max_y": 840
+      }
+    },
+    {
+      "file": "09_gear.png",
+      "x": 470,
+      "y": 708,
+      "width": 124,
+      "height": 126,
+      "original_bounds": {
+        "min_x": 482,
+        "min_y": 720,
+        "max_x": 581,
+        "max_y": 821
+      }
+    },
+    {
+      "file": "10_coffee_mug.png",
+      "x": 658,
+      "y": 713,
+      "width": 163,
+      "height": 156,
+      "original_bounds": {
+        "min_x": 670,
+        "min_y": 725,
+        "max_x": 808,
+        "max_y": 856
+      }
+    },
+    {
+      "file": "11_document_binder.png",
+      "x": 552,
+      "y": 759,
+      "width": 118,
+      "height": 118,
+      "original_bounds": {
+        "min_x": 564,
+        "min_y": 771,
+        "max_x": 657,
+        "max_y": 864
+      }
+    },
+    {
+      "file": "12_floating_paper.png",
+      "x": 372,
+      "y": 803,
+      "width": 126,
+      "height": 92,
+      "original_bounds": {
+        "min_x": 384,
+        "min_y": 815,
+        "max_x": 485,
+        "max_y": 882
+      }
+    },
+    {
+      "file": "13_burst_lines.png",
+      "x": 109,
+      "y": 272,
+      "width": 865,
+      "height": 642,
+      "original_bounds": {
+        "min_x": 121,
+        "min_y": 284,
+        "max_x": 961,
+        "max_y": 901
+      }
+    },
+    {
+      "file": "14_confetti_all.png",
+      "x": 126,
+      "y": 309,
+      "width": 770,
+      "height": 640,
+      "original_bounds": {
+        "min_x": 138,
+        "min_y": 321,
+        "max_x": 883,
+        "max_y": 936
+      }
+    }
+  ],
+  "particles": [
+    {
+      "file": "burst_top_right.png",
+      "x": 662,
+      "y": 272,
+      "width": 95,
+      "height": 118,
+      "original_bounds": {
+        "min_x": 674,
+        "min_y": 284,
+        "max_x": 744,
+        "max_y": 377
+      }
+    },
+    {
+      "file": "burst_upper_left.png",
+      "x": 109,
+      "y": 541,
+      "width": 100,
+      "height": 173,
+      "original_bounds": {
+        "min_x": 121,
+        "min_y": 553,
+        "max_x": 196,
+        "max_y": 701
+      }
+    },
+    {
+      "file": "burst_lower_left.png",
+      "x": 109,
+      "y": 680,
+      "width": 119,
+      "height": 190,
+      "original_bounds": {
+        "min_x": 121,
+        "min_y": 692,
+        "max_x": 215,
+        "max_y": 857
+      }
+    },
+    {
+      "file": "burst_right.png",
+      "x": 861,
+      "y": 550,
+      "width": 113,
+      "height": 190,
+      "original_bounds": {
+        "min_x": 873,
+        "min_y": 562,
+        "max_x": 961,
+        "max_y": 727
+      }
+    },
+    {
+      "file": "burst_lower_right.png",
+      "x": 803,
+      "y": 826,
+      "width": 90,
+      "height": 88,
+      "original_bounds": {
+        "min_x": 815,
+        "min_y": 838,
+        "max_x": 880,
+        "max_y": 901
+      }
+    },
+    {
+      "file": "confetti_zigzag_ribbon.png",
+      "x": 171,
+      "y": 531,
+      "width": 96,
+      "height": 111,
+      "original_bounds": {
+        "min_x": 183,
+        "min_y": 543,
+        "max_x": 254,
+        "max_y": 629
+      }
+    },
+    {
+      "file": "confetti_curl_squiggle.png",
+      "x": 819,
+      "y": 744,
+      "width": 56,
+      "height": 72,
+      "original_bounds": {
+        "min_x": 831,
+        "min_y": 756,
+        "max_x": 862,
+        "max_y": 803
+      }
+    },
+    {
+      "file": "confetti_trapezoid.png",
+      "x": 126,
+      "y": 886,
+      "width": 73,
+      "height": 63,
+      "original_bounds": {
+        "min_x": 138,
+        "min_y": 898,
+        "max_x": 186,
+        "max_y": 936
+      }
+    },
+    {
+      "file": "confetti_square.png",
+      "x": 155,
+      "y": 415,
+      "width": 54,
+      "height": 53,
+      "original_bounds": {
+        "min_x": 167,
+        "min_y": 427,
+        "max_x": 196,
+        "max_y": 455
+      }
+    },
+    {
+      "file": "confetti_sparkles.png",
+      "x": 186,
+      "y": 309,
+      "width": 710,
+      "height": 585,
+      "original_bounds": {
+        "min_x": 198,
+        "min_y": 321,
+        "max_x": 883,
+        "max_y": 881
+      }
+    }
+  ]
+}
