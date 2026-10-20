@@ -256,9 +256,9 @@ export default function App() {
         {/* Cols 1–2: Vertical Rotated Logo & Metadata */}
         <div className="col-span-2 flex items-start">
           <div className="flex flex-row items-stretch gap-[6px] select-none h-[115px]">
-            {/* Left vertical column: Large bold HUYML® */}
+            {/* Left vertical column: Large bold MISAKI® */}
             <div className="vertical-lr-reverse font-extrabold text-[1.85rem] leading-none tracking-[-0.03em] text-[#111111] font-mono whitespace-nowrap">
-              HUYML®
+              MISAKI®
             </div>
             {/* Right vertical column: Tiny metadata with clean separation */}
             <div className="vertical-lr-reverse flex justify-between h-full text-[0.65rem] text-[#555555] font-mono leading-none tracking-normal whitespace-nowrap py-0.5">
@@ -317,10 +317,10 @@ export default function App() {
         <div className="col-span-1 flex items-start justify-end text-[0.72rem] whitespace-nowrap">
           <span className="text-[#888888]">For Inquiries &nbsp;</span>
           <a
-            href="mailto:hello@huyml.co"
+            href="mailto:hello@misaki.dev"
             className="font-bold text-[#111111] underline underline-offset-2 hover:text-[#EE4338] transition-colors"
           >
-            hello@huyml.co
+            hello@misaki.dev
           </a>
         </div>
       </header>

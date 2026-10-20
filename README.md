@@ -1,4 +1,4 @@
-# 🧠 HUYML® Editorial Portfolio & Interactive Avatar
+# 🧠 MISAKI® Editorial Portfolio & Interactive Avatar
 
 A responsive, high-craft **Awwwards-style Swiss Brutalist / Editorial About Page** featuring an interactive **"Mind-Blown" animated character centerpiece** with touchable floating components.
 
@@ -11,11 +11,11 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompa
 ### 1. 📐 Swiss Brutalist Editorial Grid (`100vh`)
 - **Full Viewport Fit**: Designed to fit completely within a single desktop screen (`height: 100vh; overflow: hidden;`) without vertical scrollbars or cut-offs.
 - **Strict 12-Column CSS Grid**: Consistent alignment across Header, Hero Centerpiece, and Footer:
-  - **Cols 1–2**: Rotated vertical logo (`HUYML®`) with metadata (`+84 hcmc, vn` & `copyright 2026`) | Giant `19` | Awards & Recognitions.
+  - **Cols 1–2**: Rotated vertical logo (`MISAKI®`) with metadata (`+84 hcmc, vn` & `copyright 2026`) | Giant `19` | Awards & Recognitions.
   - **Cols 3–4**: Navigation menu (`WORK`, `→ ABOUT`, `PLAYGROUND`, `CONTACT`) | Talks & Publications.
   - **Cols 5–7**: Audio synthesizer toggle (`Audio Off —`) & Dynamic HCMC Clock (`HCMC, 11:08`) | Capabilities list.
   - **Cols 8–11**: Personal traits block (`PLANT DADDY...`) | Giant `96` with overlaid red `AND` | Manifesto statement.
-  - **Col 12**: Inquiries link (`hello@huyml.co`) | Trusted client list.
+  - **Col 12**: Inquiries link (`hello@misaki.dev`) | Trusted client list.
 - **Pure Flat Aesthetics**: Zero drop shadows, zero border dividers, completely flat brutalist look.
 
 ### 2. 🧢 Interactive Avatar Centerpiece
