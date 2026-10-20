@@ -11,14 +11,15 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompa
 ### 1. 📐 Swiss Brutalist Editorial Grid (`100vh`)
 - **Full Viewport Fit**: Designed to fit completely within a single desktop screen (`height: 100vh; overflow: hidden;`) without vertical scrollbars or cut-offs.
 - **Strict 12-Column CSS Grid**: Consistent alignment across Header, Hero Centerpiece, and Footer:
-  - **Cols 1–2**: Rotated vertical logo (`MISAKI®`) with metadata (`grid 07 neo-tokyo` & `system est. 2026`) | Giant `19` | Awards & Recognitions.
+  - **Cols 1–2**: Rotated vertical logo (`MISAKI®`) with metadata (`grid 07 neo-tokyo` & `system est. 2026`) | Giant `20` (Customizable) | Awards & Recognitions.
   - **Cols 3–4**: Navigation menu (`WORK`, `→ ABOUT`, `PLAYGROUND`, `CONTACT`) | Transmissions & Publications.
   - **Cols 5–7**: Audio synthesizer toggle (`Audio Off —`) & Dynamic Neo-Tokyo Clock (`Neo-Tokyo, 11:08`) | Capabilities list.
-  - **Cols 8–11**: Fictional traits block (`SYNTHESIZER OF VIRTUAL REALMS...`) | Giant `96` with overlaid red `AND` | Multiverse Manifesto.
+  - **Cols 8–11**: Fictional traits block (`SYNTHESIZER OF VIRTUAL REALMS...`) | Giant `26` with overlaid red `AND` | Multiverse Manifesto.
   - **Col 12**: Sub-Space Signal link (`hello@misaki.dev`) | Allied Guilds list.
 - **Pure Flat Aesthetics**: Zero drop shadows, zero border dividers, completely flat brutalist look.
 
-### 2. 🧢 Interactive Avatar Centerpiece
+### 2. 🧢 Interactive Avatar Centerpiece (Enlarged)
+- **Prominent Scale**: Enlarged hero avatar stage (`clamp(520px, 64vh, 740px)`) giving commanding presence while preserving single-screen `100vh` viewport budget.
 - **Closed Idle State (`avatar_not_open.gif`)**:
   - The character wears a snapback cap firmly on his head.
   - Natural breathing sway and procedural eye blinks.
@@ -31,8 +32,8 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS**, and **Vite**, accompa
   - Reconstructed smooth skull rim via cubic spline interpolation (eliminating jagged notches and spikes).
   - Reconstructed floating paper with a smooth, closed curved bottom edge and zero stray skull fragments.
 
-### 3. 💻 Touchable & Interactive Components
-When the avatar is open, each floating idea becomes an interactive touch target:
+### 3. 💻 Touchable & Interactive Components & Numbers
+- **Customizable Hero Numbers**: Click either the left (`20`) or right (`26`) giant number to change it to any year or digit code you desire (persists in `localStorage`).
 - **Hover Micro-Interactions**: Hovering over any floating item shows an indicator ring and tooltip tag (e.g. `CYBER RIG ↗`, `SYNAPSE SPARK ↗`).
 - **Showcase Modal**: Clicking any floating component opens a Swiss brutalist modal with detailed specifications and high-resolution artwork.
 - **Custom Cyber Rig Showcase**:
@@ -54,7 +55,7 @@ When the avatar is open, each floating idea becomes an interactive touch target:
 | **Primary Text** | `#111111` | Deep brutalist black |
 | **Accent / Bio** | `#EE4338` | Coral red-orange highlight |
 | **Muted Labels** | `#888888` | Metadata and section subtitles |
-| **Giant Numbers** | `#FFFFFF` | Oversized white background digits (`19` and `96`) |
+| **Giant Numbers** | `#FFFFFF` | Oversized white background digits (`20` and `26`, customizable) |
 
 - **Display & Navigation Font**: `'Barlow Semi Condensed'` / `'Archivo Narrow'` (Weight: 500)
 - **Giant Numbers & Body Font**: `'Inter'` / `'Helvetica Neue'` (Bold 700 for numbers, Medium for lists)

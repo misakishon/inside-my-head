@@ -119,6 +119,20 @@ export default function App() {
   const [audioOn, setAudioOn] = useState(false)
   const [timeStr, setTimeStr] = useState('11:08')
   const [selectedItem, setSelectedItem] = useState<InteractiveItem | null>(null)
+  const [numberLeft, setNumberLeft] = useState(() => {
+    try {
+      return localStorage.getItem('hero_num_left') || '20'
+    } catch {
+      return '20'
+    }
+  })
+  const [numberRight, setNumberRight] = useState(() => {
+    try {
+      return localStorage.getItem('hero_num_right') || '26'
+    } catch {
+      return '26'
+    }
+  })
   const [customLaptopImg, setCustomLaptopImg] = useState<string | null>(() => {
     try {
       return localStorage.getItem('my_laptop_img')
@@ -127,6 +141,32 @@ export default function App() {
     }
   })
   const audioCtxRef = useRef<AudioContext | null>(null)
+
+  const handleEditNumberLeft = () => {
+    const val = window.prompt('Enter left number (e.g. 20, 19, 07):', numberLeft)
+    if (val !== null && val.trim() !== '') {
+      const clean = val.trim().slice(0, 4)
+      setNumberLeft(clean)
+      try {
+        localStorage.setItem('hero_num_left', clean)
+      } catch {
+        // ignore
+      }
+    }
+  }
+
+  const handleEditNumberRight = () => {
+    const val = window.prompt('Enter right number (e.g. 26, 99, 00):', numberRight)
+    if (val !== null && val.trim() !== '') {
+      const clean = val.trim().slice(0, 4)
+      setNumberRight(clean)
+      try {
+        localStorage.setItem('hero_num_right', clean)
+      } catch {
+        // ignore
+      }
+    }
+  }
 
   // Close modal on Escape key
   useEffect(() => {
@@ -326,14 +366,18 @@ export default function App() {
       </header>
 
       {/* ─────────────────────────────────────────────────────────────
-          MIDDLE ROW (Giant 19, Centerpiece Speech & Avatar, Giant 96)
+          MIDDLE ROW (Giant Numbers, Centerpiece Speech & Avatar)
       ───────────────────────────────────────────────────────────── */}
       <section className="grid grid-cols-12 gap-x-6 items-center w-full my-auto relative select-none overflow-visible">
         
-        {/* Cols 1–3: Giant 19 Flush Left */}
-        <div className="col-span-3 flex items-center justify-start pointer-events-none select-none">
-          <span className="font-giant text-[clamp(15rem,23vw,24rem)] leading-[0.78] tracking-[-0.04em] text-white select-none">
-            19
+        {/* Cols 1–3: Giant Number Left Flush Left */}
+        <div className="col-span-3 flex items-center justify-start select-none">
+          <span
+            onClick={handleEditNumberLeft}
+            title="Click to customize number"
+            className="font-giant text-[clamp(15rem,23vw,24rem)] leading-[0.78] tracking-[-0.04em] text-white select-none cursor-pointer hover:text-white/80 transition-colors"
+          >
+            {numberLeft}
           </span>
         </div>
 
@@ -413,20 +457,21 @@ export default function App() {
           </div>
         </div>
 
-        {/* Cols 8–11: Giant 96 starting at Col 8 with overlaid red AND */}
-        <div className="col-span-4 relative flex items-center justify-start pointer-events-none select-none">
+        {/* Cols 8–11: Giant Number Right starting at Col 8 with overlaid red AND */}
+        <div className="col-span-4 relative flex items-center justify-start select-none">
           <span
             className="absolute left-0 top-[48%] -translate-y-1/2 z-10 font-condensed font-medium text-[#EE4338] text-[1.55rem] tracking-tight leading-none pointer-events-none"
           >
             AND
           </span>
-          <span className="font-giant text-[clamp(15rem,23vw,24rem)] leading-[0.78] tracking-[-0.04em] text-white select-none">
-            96
+          <span
+            onClick={handleEditNumberRight}
+            title="Click to customize number"
+            className="font-giant text-[clamp(15rem,23vw,24rem)] leading-[0.78] tracking-[-0.04em] text-white select-none cursor-pointer hover:text-white/80 transition-colors"
+          >
+            {numberRight}
           </span>
         </div>
-
-        {/* Col 12: Empty slot preserving 12-column alignment */}
-        <div className="col-span-1" />
       </section>
 
       {/* ─────────────────────────────────────────────────────────────

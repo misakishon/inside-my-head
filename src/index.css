@@ -44,11 +44,11 @@
   position: relative;
   background-color: #111111;
   color: #ffffff;
-  padding: 18px 24px;
-  font-size: clamp(1.35rem, 1.7vw, 1.75rem);
+  padding: 20px 26px;
+  font-size: clamp(1.4rem, 1.8vw, 1.85rem);
   line-height: 1.05;
   text-transform: uppercase;
-  margin-top: -40px; /* sits at cap/forehead height */
+  margin-top: -50px; /* sits at cap/forehead height */
   z-index: 5;
   box-shadow: none;
   filter: none;
@@ -61,9 +61,9 @@
 
 /* Avatar Stage - larger size with exact aspect ratio (640 / 960) */
 .avatar-stage {
-  height: clamp(430px, 54vh, 600px);
-  width: calc(clamp(430px, 54vh, 600px) * (640 / 960));
-  margin-top: calc(clamp(430px, 54vh, 600px) * -0.34);
+  height: clamp(520px, 64vh, 740px);
+  width: calc(clamp(520px, 64vh, 740px) * (640 / 960));
+  margin-top: calc(clamp(520px, 64vh, 740px) * -0.34);
   margin-left: -15px;
   position: relative;
   overflow: visible;
